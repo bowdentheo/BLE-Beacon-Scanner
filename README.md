@@ -78,4 +78,4 @@ I DON'T recommend that you use this in a live project - it is merely a proof of 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License
