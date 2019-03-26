@@ -7,6 +7,7 @@ It shows: UUID, Major, Minor, Mac Address and RSSI.
 Let me know if there are any issues.
 
 Here is a demo:
+
 ![](scannerDemo.gif)
 
 ## Getting Started
