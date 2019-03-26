@@ -1,8 +1,15 @@
-# iBeacon Scanner
+## BLE iBeacon Scanner - iBeacon and Eddystone Beacons
 
-A simple project that scans for iBeacon devices using your Raspberry Pi and Python.
+A simple project that scans for iBeacon and Eddystone devices using your Raspberry Pi and Python.
 
-It shows: UUID, Major, Minor, Mac Address and RSSI.
+# iBeacon
+UUID, Major, Minor, Mac Address and RSSI
+
+# Eddystone
+UID - Finds: Namespace ID and Instance ID.
+URL - Finds: URL and URL Prefix.
+EID - Finds (Details comming soon).
+TLM - Finds (Details comming soon).
 
 Let me know if there are any issues.
 
@@ -35,7 +42,10 @@ cd /lib/systemd/system
 sudo vim bluetooth.service
 ```
 Add ```--experimental``` after  ```ExecStart=/usr/local/libexec/bluetooth/bluetoothd```
-So it lookes like this: ```ExecStart=/usr/local/libexec/bluetooth/bluetoothd --experimental```
+So it lookes like this: 
+```
+ExecStart=/usr/local/libexec/bluetooth/bluetoothd --experimental
+```
 
 3. Save and exit vim
 Shift + Colon, then type ```wq!``` - to write and quit.
@@ -55,16 +65,16 @@ Download files.
 
 Go to directory
 ```
-cd Desktop/iBeacon-Scanner
+cd Desktop/BLE-Beacon-Scanner
 ```
 Run
 ```
-python iBeaconScanner.py
+python BeaconScanner.py
 ```
 
 ## Running the tests
 
-Once the app is running you should see any iBeacon devices in the viinity around you - The RSSI will update if a beacon moves.
+Once the app is running you should see any iBeacon devices in the viinity around you - The RSSI will update if an iBeacon moves.
 
 
 ## Deployment
@@ -73,8 +83,8 @@ I DON'T recommend that you use this in a live project - it is merely a proof of 
 
 ## Future Development
 
-- Eddystone support
 - UriBeacon support
+- Versatility
 
 ## License
 
