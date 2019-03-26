@@ -19,7 +19,7 @@ Let me know if there are any issues.
 
 Here is a demo:
 
-![](ScannerDemo.gif)
+![](BeaconDemo.gif)
 
 ## Getting Started
 
