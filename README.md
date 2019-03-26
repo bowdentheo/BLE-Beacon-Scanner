@@ -7,8 +7,11 @@ UUID, Major, Minor, Mac Address and RSSI
 
 ## Eddystone
 UID - Finds: Namespace ID and Instance ID.
+
 URL - Finds: URL and URL Prefix.
+
 EID - Finds (Details comming soon).
+
 TLM - Finds (Details comming soon).
 
 Let me know if there are any issues.
