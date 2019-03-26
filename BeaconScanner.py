@@ -7,7 +7,7 @@ import bluetooth._bluetooth as bluez
 dev_id = 0
 try:
 	sock = bluez.hci_open_dev(dev_id)
-	print ("\n *** Looking for iBeacons ***\n")
+	print ("\n *** Looking for BLE Beacons ***\n")
 	print ("\n *** CTRL-C to Cancel ***\n")
 except:
 	print ("Error accessing bluetooth")
