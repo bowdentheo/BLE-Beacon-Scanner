@@ -74,8 +74,7 @@ python BeaconScanner.py
 
 ## Running the tests
 
-Once the app is running you should see any iBeacon devices in the viinity around you - The RSSI will update if an iBeacon moves.
-
+Once the app is running you should see any iBeacon and Eddystone devices in the vicinity - The RSSI will update if an iBeacon moves.
 
 ## Deployment
 
@@ -85,6 +84,7 @@ I DON'T recommend that you use this in a live project - it is merely a proof of 
 
 - UriBeacon support
 - Versatility
+- Beacon type selection
 
 ## License
 
