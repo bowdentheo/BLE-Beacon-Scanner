@@ -1,11 +1,11 @@
-## BLE iBeacon Scanner - iBeacon and Eddystone Beacons
+# BLE iBeacon Scanner - iBeacon and Eddystone Beacons
 
-A simple project that scans for iBeacon and Eddystone devices using your Raspberry Pi and Python.
+A simple project that scans for iBeacon and Eddystone BLE beacons using your Raspberry Pi and Python.
 
-# iBeacon
+## iBeacon
 UUID, Major, Minor, Mac Address and RSSI
 
-# Eddystone
+## Eddystone
 UID - Finds: Namespace ID and Instance ID.
 URL - Finds: URL and URL Prefix.
 EID - Finds (Details comming soon).
