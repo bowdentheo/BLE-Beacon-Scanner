@@ -75,6 +75,7 @@ Run
 ```
 python BeaconScanner.py
 ```
+Note that this does not work with Python 3 yet... we are working on it!
 
 ## Running the tests
 
