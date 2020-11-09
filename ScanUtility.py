@@ -43,7 +43,7 @@ def parse_events(sock, loop_count=100):
         If the bluetooth device is an beacon then show the beacon.
         """
         #print (dataString)
-        if dataString[34:50] == '0303aafe1516aafe' or '0303AAFE1116AAFE':
+        if (dataString[34:42] == '0303aafe') and (dataString[44:50] == '16AAFE'):
             """
             Selects parts of the bluetooth packets.
             """
