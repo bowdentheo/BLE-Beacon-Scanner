@@ -68,8 +68,12 @@ def parse_events(sock, loop_count=100):
                 elif urlprefix == '03':
                     prefix = 'https://'
                 hexUrl = dataString[56:][:-2]
-                url = prefix + hexUrl.decode("hex")
-                rssi, = struct.unpack("b", packet[packetOffset -1])
+                if sys.version_info[0] == 3:
+                    url = prefix + bytes.fromhex(hexUrl).decode('utf-8')
+                    rssi, = struct.unpack("b", bytes([packet[packetOffset-1]]))
+                else:
+                    url = prefix + hexUrl.decode("hex")
+                    rssi, = struct.unpack("b", packet[packetOffset-1])
                 resultsArray = [{"type": type, "url": url}]
                 return resultsArray
 
