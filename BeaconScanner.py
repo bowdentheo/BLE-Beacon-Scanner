@@ -17,7 +17,9 @@ ScanUtility.hci_enable_le_scan(sock)
 try:
 	while True:
 		returnedList = ScanUtility.parse_events(sock, 10)
-		for item in returnedList:
+		if returnedList is None:
+			continue
+		for item in returnedList: 
 			print(item)
 			print("")
 except KeyboardInterrupt:
