@@ -4,6 +4,7 @@
 import sys
 import struct
 import bluetooth._bluetooth as bluez
+import os
 
 OGF_LE_CTL=0x08
 OCF_LE_SET_SCAN_ENABLE=0x000C
@@ -98,8 +99,8 @@ def parse_events(sock, loop_count=100):
             """
             type = "iBeacon"
             uuid = dataString[46:54] + "-" + dataString[54:58] + "-" + dataString[58:62] + "-" + dataString[62:66] + "-" + dataString[66:78]
-	    if uuid != '78e3b374-a079-4011-a999-62da95809bba':
-		return None
+            if uuid != '78e3b374-a079-4011-a999-62da95809bba':
+                return None
             major = dataString[78:82]
             minor = dataString[82:86]
             majorVal = int("".join(major.split()[::-1]), 16)
